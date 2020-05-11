@@ -1,7 +1,7 @@
 import googlemaps
 from datetime import datetime
 
-gmaps = googlemaps.Client(key='AIzaSyAoF5kcm9n_gUCTLMj_9SHZeapsecOfWQo')
+gmaps = googlemaps.Client(key='')
 
 # Look up an address with reverse geocoding
 reverse_geocode_result = gmaps.reverse_geocode((1.374616, 103.845441))

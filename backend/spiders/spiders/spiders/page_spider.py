@@ -12,7 +12,7 @@ class PageSpider(scrapy.spiders.Spider):
         super(PageSpider, self).__init__(*args, **kwargs)
         with open('slugs.json') as json_file:
             data = json.loads(json_file.read())
-        self.gmaps = googlemaps.Client(key='AIzaSyAoF5kcm9n_gUCTLMj_9SHZeapsecOfWQo')
+        self.gmaps = googlemaps.Client(key='')
         slugs = [item['slug'] for item in data[0]['slugs']]
         self.start_urls = [
             'https://eatigo.com{}'.format(item) for item in slugs
